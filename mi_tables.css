@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Case Problem 1
+
+   Tables Style Sheet
+   Author: Hesbon Osoro
+   Date: 12/9/22    
+
+   Filename:         mi_tables.css
+
+*/
+
+/* Table Styles */
+table {
+  background: linear-gradient(to bottom, rgb(190, 215, 255), black);
+  border: 5px solid gray;
+}
+
+table th,
+table td {
+  border: 3px solid gray;
+  line-height: 1.4em;
+  padding: 8px;
+}
+
+table th {
+  background-color: black;
+  color: rgb(130, 210, 255);
+  font-weight: normal;
+}
+
+table td {
+  color: white;
+  font-size: 0.9em;
+  vertical-align: text-top;
+}
+
+/* Column Styles */
+col#firstCol {
+  width: 24%;
+}
+
+col.dataCols {
+  width: 19%;
+}
+
+/* Table Header Styles */
+table thead tr {
+  height: 60px;
+}
+
+table thead tr:first-of-type th:first-of-type {
+  font-size: 2em;
+}
+
+table thead tr:first-of-type th:not(:first-of-type) {
+  background-color: transparent;
+  color: black;
+}
